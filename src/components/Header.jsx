@@ -74,20 +74,20 @@ export default function Header({ currentPage, setCurrentPage, onOpenEnquireModal
           </div>
         </div>
 
-        {/* Main Navigation Bar (Clean White Background) */}
+        {/* Main Navigation Bar (Clean White Background, Compact Sleek Height) */}
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full max-w-full">
-          <div className="flex items-center justify-between h-18 sm:h-22 md:h-24 gap-3">
+          <div className="flex items-center justify-between h-16 sm:h-18 gap-2">
             
-            {/* Brand Logo - Enlarged for Maximum Prominence */}
+            {/* Brand Logo - Maximized inside compact navbar */}
             <button 
               onClick={() => handleNavClick('home')}
-              className="flex items-center text-left group focus:outline-none cursor-pointer min-w-0 shrink py-1.5"
+              className="flex items-center text-left group focus:outline-none cursor-pointer min-w-0 shrink py-0 my-auto"
               aria-label="SANTOSH Global HSE Academy Home"
             >
               <img 
                 src="/images/santosh-logo-transparent.png" 
                 alt="SANTOSH Global HSE Academy" 
-                className="h-11 sm:h-14 md:h-16 lg:h-[68px] w-auto object-contain transition-transform group-hover:scale-[1.02]"
+                className="h-11 sm:h-13 md:h-14 lg:h-[58px] w-auto object-contain transition-transform group-hover:scale-[1.03] origin-left"
               />
             </button>
 
@@ -199,7 +199,7 @@ export default function Header({ currentPage, setCurrentPage, onOpenEnquireModal
       </header>
 
       {/* Header Placeholder Spacer (keeps layout perfectly positioned below fixed navbar) */}
-      <div className="h-[82px] sm:h-[102px] md:h-[110px] w-full shrink-0" aria-hidden="true" />
+      <div className="h-[74px] sm:h-[92px] w-full shrink-0" aria-hidden="true" />
     </>
   );
 }
