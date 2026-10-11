@@ -116,7 +116,7 @@ export default function HomePage({ setCurrentPage, onOpenEnquireModal }) {
                   <Globe className="w-3.5 h-3.5 text-[#38BDF8] shrink-0" />
                   <span className="font-semibold text-white">Online &amp; Classroom Training</span>
                   <span className="text-white/40 mx-1 hidden sm:inline">|</span>
-                  <span className="text-sky-100">India · Middle East · Africa · Worldwide</span>
+                  <span className="text-sky-100">India · Worldwide</span>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function HomePage({ setCurrentPage, onOpenEnquireModal }) {
               { icon: Users, title: 'Instructor-Led Training', desc: 'Expert HSE Specialists' },
               { icon: Target, title: 'Exam-Focused Practice', desc: 'ASP® · CSP® · CRSP® Blueprints' },
               { icon: Laptop, title: 'Flexible Learning', desc: 'Live Virtual & Classroom' },
-              { icon: Globe2, title: 'Global Recognition', desc: 'India · Gulf · Africa · Global' },
+              { icon: Globe2, title: 'Global Recognition', desc: 'India · Worldwide' },
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="flex items-center gap-3">
                 <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 shadow-xs bg-sky-50 text-[#0284C7] ring-1 ring-sky-100">
@@ -161,7 +161,7 @@ export default function HomePage({ setCurrentPage, onOpenEnquireModal }) {
               24/7 Global Enquiry Desk
             </span>
             <span className="text-white/40 hidden sm:inline">•</span>
-            <span className="text-slate-200">Accessible Worldwide</span>
+            <span className="text-sky-200 font-medium">India · Worldwide</span>
             <span className="text-white/40 hidden sm:inline">•</span>
             <span className="text-slate-200">Online &amp; Classroom Delivery</span>
           </div>

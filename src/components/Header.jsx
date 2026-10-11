@@ -57,7 +57,7 @@ export default function Header({ currentPage, setCurrentPage, onOpenEnquireModal
               </span>
               <span className="text-white/30 hidden md:inline">|</span>
               <span className="text-sky-200 hidden md:inline font-medium">
-                India &bull; Middle East &bull; Africa &bull; Worldwide
+                India &bull; Worldwide
               </span>
             </div>
 
@@ -76,18 +76,18 @@ export default function Header({ currentPage, setCurrentPage, onOpenEnquireModal
 
         {/* Main Navigation Bar (Clean White Background) */}
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full max-w-full">
-          <div className="flex items-center justify-between h-15 sm:h-20 gap-2">
+          <div className="flex items-center justify-between h-18 sm:h-22 md:h-24 gap-3">
             
-            {/* Brand Logo */}
+            {/* Brand Logo - Enlarged for Maximum Prominence */}
             <button 
               onClick={() => handleNavClick('home')}
-              className="flex items-center text-left group focus:outline-none cursor-pointer min-w-0 shrink py-1"
+              className="flex items-center text-left group focus:outline-none cursor-pointer min-w-0 shrink py-1.5"
               aria-label="SANTOSH Global HSE Academy Home"
             >
               <img 
                 src="/images/santosh-logo-transparent.png" 
                 alt="SANTOSH Global HSE Academy" 
-                className="h-9 sm:h-12 md:h-13 w-auto object-contain transition-transform group-hover:scale-[1.02]"
+                className="h-11 sm:h-14 md:h-16 lg:h-[68px] w-auto object-contain transition-transform group-hover:scale-[1.02]"
               />
             </button>
 
@@ -199,7 +199,7 @@ export default function Header({ currentPage, setCurrentPage, onOpenEnquireModal
       </header>
 
       {/* Header Placeholder Spacer (keeps layout perfectly positioned below fixed navbar) */}
-      <div className="h-[74px] sm:h-[92px] w-full shrink-0" aria-hidden="true" />
+      <div className="h-[82px] sm:h-[102px] md:h-[110px] w-full shrink-0" aria-hidden="true" />
     </>
   );
 }
