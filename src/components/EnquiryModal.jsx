@@ -47,8 +47,8 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProgram, onSu
         className="relative w-full max-w-xl max-h-[92vh] flex flex-col bg-white border border-slate-200 rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Top Header: Deep Executive Oxford Navy */}
-        <div className="bg-[#04162E] text-white px-6 py-4 flex items-center justify-between border-b border-white/10 flex-shrink-0">
+        {/* Top Header: Brand Sapphire */}
+        <div className="bg-[#001838] text-white px-6 py-4 flex items-center justify-between border-b border-white/10 flex-shrink-0">
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-lg bg-white p-1 flex items-center justify-center shadow-sm">
               <img src="/images/santosh-shield-transparent.png" alt="SANTOSH" className="h-7 w-auto object-contain" />
@@ -57,7 +57,7 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProgram, onSu
               <h3 className="text-base font-bold text-white leading-tight">
                 Training Enquiry Desk
               </h3>
-              <p className="text-xs text-slate-200">
+              <p className="text-xs text-sky-200">
                 SANTOSH • 24/7 Worldwide Support
               </p>
             </div>
@@ -74,10 +74,10 @@ export default function EnquiryModal({ isOpen, onClose, preselectedProgram, onSu
         <div className="p-6 sm:p-7 overflow-y-auto flex-1">
           {submitted ? (
             <div className="py-8 text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-blue-50 border border-blue-200 text-[#1D4ED8] mx-auto flex items-center justify-center shadow-sm">
+              <div className="w-16 h-16 rounded-full bg-sky-50 border border-sky-200 text-[#0284C7] mx-auto flex items-center justify-center shadow-sm">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
-              <h4 className="text-xl font-bold text-[#0B2545]">
+              <h4 className="text-xl font-bold text-[#002B66]">
                 Enquiry Successfully Received
               </h4>
               <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">

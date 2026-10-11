@@ -16,13 +16,13 @@ export default function AboutPage({ setCurrentPage, onOpenEnquireModal }) {
       <section className="py-14 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-extrabold text-[#0B2545]">More than training. A career partner.</h2>
+            <h2 className="text-3xl font-extrabold text-[#002B66]">More than training. A career partner.</h2>
             <div className="mt-5 p-5 rounded-2xl bg-[#F8FAFC] border border-slate-200 flex items-center gap-4">
               <img src="/images/santosh-shield-transparent.png" alt="SANTOSH Shield" className="h-12 sm:h-14 w-auto object-contain shrink-0" />
               <div>
-                <h3 className="font-extrabold text-[#0B2545] text-base sm:text-lg">SANTOSH Global HSE Academy</h3>
+                <h3 className="font-extrabold text-[#002B66] text-base sm:text-lg">SANTOSH Global HSE Academy</h3>
                 <p className="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">
-                  <span className="font-bold text-[#1D4ED8]">S</span>pecialised <span className="font-bold text-[#1D4ED8]">A</span>cademy for <span className="font-bold text-[#1D4ED8]">N</span>extGen <span className="font-bold text-[#1D4ED8]">T</span>rainings in <span className="font-bold text-[#1D4ED8]">O</span>ccupational <span className="font-bold text-[#1D4ED8]">S</span>afety and <span className="font-bold text-[#1D4ED8]">H</span>ealth
+                  <span className="font-bold text-[#003882]">S</span>pecialised <span className="font-bold text-[#003882]">A</span>cademy for <span className="font-bold text-[#003882]">N</span>extGen <span className="font-bold text-[#003882]">T</span>rainings in <span className="font-bold text-[#003882]">O</span>ccupational <span className="font-bold text-[#003882]">S</span>afety and <span className="font-bold text-[#003882]">H</span>ealth
                 </p>
               </div>
             </div>
@@ -36,16 +36,16 @@ export default function AboutPage({ setCurrentPage, onOpenEnquireModal }) {
             </button>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-2xl border border-blue-200/80 bg-blue-50/60 p-6">
-              <h3 className="font-bold text-[#0B2545]">What we provide</h3>
+            <div className="rounded-2xl border border-sky-200/80 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-[#002B66]">What we provide</h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 {['Training', 'Coaching', 'Examination preparation'].map((t) => (
-                  <li key={t} className="flex gap-2"><Check className="w-4 h-4 mt-0.5 text-[#1D4ED8] stroke-[3]" />{t}</li>
+                  <li key={t} className="flex gap-2"><Check className="w-4 h-4 mt-0.5 text-[#0284C7] stroke-[3]" />{t}</li>
                 ))}
               </ul>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-              <h3 className="font-bold text-[#0B2545]">What we do not do</h3>
+              <h3 className="font-bold text-[#002B66]">What we do not do</h3>
               <ul className="mt-3 space-y-2 text-sm text-slate-700">
                 <li className="flex gap-2"><X className="w-4 h-4 mt-0.5 text-slate-400 stroke-[3]" />Award the ASP®, CSP® or CRSP® credentials</li>
               </ul>
@@ -60,9 +60,9 @@ export default function AboutPage({ setCurrentPage, onOpenEnquireModal }) {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-[260px_1fr] items-center">
             {INSTRUCTOR.photo && <img src={INSTRUCTOR.photo} alt={INSTRUCTOR.name} className="w-full rounded-2xl object-cover shadow-lg" />}
             <div>
-              <h2 className="text-3xl font-extrabold text-[#0B2545]">Learn From Industry Experience</h2>
-              <p className="mt-3 text-2xl font-bold text-[#0B2545]">{INSTRUCTOR.name}</p>
-              <p className="font-semibold text-[#1D4ED8]">{INSTRUCTOR.role}</p>
+              <h2 className="text-3xl font-extrabold text-[#002B66]">Learn From Industry Experience</h2>
+              <p className="mt-3 text-2xl font-bold text-[#002B66]">{INSTRUCTOR.name}</p>
+              <p className="font-semibold text-[#0284C7]">{INSTRUCTOR.role}</p>
               <p className="mt-3 text-slate-600">{INSTRUCTOR.bio}</p>
             </div>
           </div>

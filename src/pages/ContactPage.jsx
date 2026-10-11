@@ -41,16 +41,16 @@ export default function ContactPage({ setCurrentPage, onShowToast }) {
               [Users, 'Dedicated Learner Support', 'Personal guidance from enquiry through to exam day.'],
             ].map(([Icon, t, d]) => (
               <div key={t} className="flex gap-4 rounded-2xl bg-white border border-slate-200 p-5">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50/80 text-[#1D4ED8]"><Icon className="w-5 h-5" /></div>
-                <div><p className="font-bold text-[#0B2545]">{t}</p><p className="text-sm text-slate-600">{d}</p></div>
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-50 text-[#0284C7] ring-1 ring-sky-100"><Icon className="w-5 h-5" /></div>
+                <div><p className="font-bold text-[#002B66]">{t}</p><p className="text-sm text-slate-600">{d}</p></div>
               </div>
             ))}
           </div>
           <div className="rounded-2xl bg-white border border-slate-200 p-6 sm:p-10 shadow-lg">
             {submitted ? (
               <div className="py-12 text-center space-y-5">
-                <CheckCircle2 className="w-16 h-16 mx-auto text-[#1D4ED8]" />
-                <h3 className="text-2xl font-bold text-[#0B2545]">Thank You, {formData.name}</h3>
+                <CheckCircle2 className="w-16 h-16 mx-auto text-[#0284C7]" />
+                <h3 className="text-2xl font-bold text-[#002B66]">Thank You, {formData.name}</h3>
                 <p className="text-sm text-slate-700 max-w-md mx-auto">
                   Your enquiry regarding <strong>{formData.interestedTraining}</strong> has been received. We will contact you at {formData.email}.
                 </p>
@@ -59,7 +59,7 @@ export default function ContactPage({ setCurrentPage, onShowToast }) {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="space-y-1">
-                      <h3 className="text-xl font-bold text-[#0B2545]">
+                      <h3 className="text-xl font-bold text-[#002B66]">
                         Enquiry Form
                       </h3>
                       <p className="text-xs text-slate-500 font-normal">

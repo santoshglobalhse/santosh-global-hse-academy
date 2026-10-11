@@ -3,8 +3,8 @@ import { Check, ArrowRight, Users, Laptop, FileCheck } from 'lucide-react';
 import { EXAM_PREP_PROGRAMS, JOURNEY_STEPS } from '../data/academyData';
 import { PageHero, CtaBand, DISCLAIMER } from '../components/PageHero';
 
-const bar = { teal: 'bg-[#0284C7]', sky: 'bg-[#0284C7]', blue: 'bg-[#1D4ED8]', orange: 'bg-[#FF6A00]' };
-const tick = { teal: 'text-[#0284C7]', sky: 'text-[#0284C7]', blue: 'text-[#1D4ED8]', orange: 'text-[#FF6A00]' };
+const bar = { teal: 'bg-[#0284C7]', sky: 'bg-[#0284C7]', blue: 'bg-[#003882]', orange: 'bg-[#FF6A00]' };
+const tick = { teal: 'text-[#0284C7]', sky: 'text-[#0284C7]', blue: 'text-[#0284C7]', orange: 'text-[#FF6A00]' };
 
 export default function CoursesPage({ onOpenEnquireModal }) {
   return (
@@ -31,7 +31,7 @@ export default function CoursesPage({ onOpenEnquireModal }) {
                       </span>
                     )}
                   </div>
-                  <h2 className="mt-1 text-3xl sm:text-4xl font-extrabold text-[#0B2545]">{p.code}</h2>
+                  <h2 className="mt-1 text-3xl sm:text-4xl font-extrabold text-[#002B66]">{p.code}</h2>
                   <p className="font-semibold text-slate-600">{p.fullName}</p>
                   <button onClick={() => onOpenEnquireModal(p.title)} className="mt-5 btn-primary">
                     Enquire about {p.code} <ArrowRight className="w-4 h-4" />
@@ -60,8 +60,8 @@ export default function CoursesPage({ onOpenEnquireModal }) {
             [FileCheck, 'Mock Exams & Review', 'Timed practice with detailed review of weak areas.'],
           ].map(([Icon, t, d]) => (
             <div key={t} className="rounded-2xl border border-slate-200 p-6">
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50/80 text-[#1D4ED8]"><Icon className="w-6 h-6" /></div>
-              <h3 className="font-bold text-[#0B2545]">{t}</h3>
+              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-sky-50 text-[#0284C7] ring-1 ring-sky-100"><Icon className="w-6 h-6" /></div>
+              <h3 className="font-bold text-[#002B66]">{t}</h3>
               <p className="mt-1 text-sm text-slate-600">{d}</p>
             </div>
           ))}
@@ -70,12 +70,12 @@ export default function CoursesPage({ onOpenEnquireModal }) {
 
       <section className="bg-[#F8FAFC] py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B2545]">How every program is structured</h2>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#002B66]">How every program is structured</h2>
           <ol className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {JOURNEY_STEPS.map((s, i) => (
               <li key={s.title} className="flex gap-3 rounded-xl bg-white p-4 border border-slate-200">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1D4ED8] text-xs font-bold text-white">{String(i + 1).padStart(2, '0')}</span>
-                <div><p className="font-bold text-[#0B2545]">{s.title}</p><p className="text-sm text-slate-600">{s.text}</p></div>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#002B66] text-xs font-bold text-white">{String(i + 1).padStart(2, '0')}</span>
+                <div><p className="font-bold text-[#002B66]">{s.title}</p><p className="text-sm text-slate-600">{s.text}</p></div>
               </li>
             ))}
           </ol>

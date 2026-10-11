@@ -17,20 +17,6 @@ export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalPreselectedProgram, setModalPreselectedProgram] = useState('');
   const [toastMessage, setToastMessage] = useState('');
-  const [colorTheme, setColorTheme] = useState(() => {
-    try {
-      return localStorage.getItem('santosh_theme') || 'plum';
-    } catch {
-      return 'plum';
-    }
-  });
-
-  const handleThemeChange = (newTheme) => {
-    setColorTheme(newTheme);
-    try {
-      localStorage.setItem('santosh_theme', newTheme);
-    } catch {}
-  };
 
   // Handle URL hash changes for deep linking
   useEffect(() => {
@@ -72,8 +58,6 @@ export default function App() {
           <HomePage
             setCurrentPage={handlePageChange}
             onOpenEnquireModal={handleOpenEnquireModal}
-            colorTheme={colorTheme}
-            setColorTheme={handleThemeChange}
           />
         );
       case 'about':
@@ -81,7 +65,6 @@ export default function App() {
           <AboutPage
             setCurrentPage={handlePageChange}
             onOpenEnquireModal={handleOpenEnquireModal}
-            colorTheme={colorTheme}
           />
         );
       case 'services':
@@ -89,7 +72,6 @@ export default function App() {
           <ServicesPage
             setCurrentPage={handlePageChange}
             onOpenEnquireModal={handleOpenEnquireModal}
-            colorTheme={colorTheme}
           />
         );
       case 'courses':
@@ -97,7 +79,6 @@ export default function App() {
           <CoursesPage
             setCurrentPage={handlePageChange}
             onOpenEnquireModal={handleOpenEnquireModal}
-            colorTheme={colorTheme}
           />
         );
       case 'why-choose-us':
@@ -105,7 +86,6 @@ export default function App() {
           <WhyChooseUsPage
             setCurrentPage={handlePageChange}
             onOpenEnquireModal={handleOpenEnquireModal}
-            colorTheme={colorTheme}
           />
         );
       case 'contact':
@@ -113,7 +93,6 @@ export default function App() {
           <ContactPage
             setCurrentPage={handlePageChange}
             onShowToast={handleToast}
-            colorTheme={colorTheme}
           />
         );
       default:
@@ -121,8 +100,6 @@ export default function App() {
           <HomePage
             setCurrentPage={handlePageChange}
             onOpenEnquireModal={handleOpenEnquireModal}
-            colorTheme={colorTheme}
-            setColorTheme={handleThemeChange}
           />
         );
     }
@@ -138,8 +115,6 @@ export default function App() {
         currentPage={currentPage}
         setCurrentPage={handlePageChange}
         onOpenEnquireModal={handleOpenEnquireModal}
-        colorTheme={colorTheme}
-        setColorTheme={handleThemeChange}
       />
 
       {/* Main Page Area */}
@@ -151,8 +126,6 @@ export default function App() {
       <Footer
         setCurrentPage={handlePageChange}
         onOpenEnquireModal={handleOpenEnquireModal}
-        colorTheme={colorTheme}
-        setColorTheme={handleThemeChange}
       />
 
       {/* Floating Quick Action Dock & Back-To-Top */}

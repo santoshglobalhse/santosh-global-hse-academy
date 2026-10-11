@@ -14,8 +14,8 @@ export default function Footer({ setCurrentPage, onOpenEnquireModal }) {
     ['home', 'Home'], ['about', 'About Us'], ['services', 'Services'], ['why-choose-us', 'Why Us'], ['contact', 'Contact'],
   ];
   return (
-    <footer className="bg-[#04162E] text-slate-300">
-      <div className="h-1.5 w-full bg-gradient-to-r from-[#1D4ED8] via-[#38BDF8] to-[#FF6A00]" />
+    <footer className="bg-[#00142E] text-slate-300">
+      <div className="h-1.5 w-full bg-gradient-to-r from-[#003882] via-[#38BDF8] to-[#FF6A00]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2 space-y-4">
           <div className="inline-flex items-center bg-white rounded-xl px-3.5 py-2 shadow-sm border border-white/20">
@@ -39,7 +39,7 @@ export default function Footer({ setCurrentPage, onOpenEnquireModal }) {
           <h4 className="text-sm font-bold uppercase tracking-wider text-white mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             {links.map(([id, label]) => (
-              <li key={id}><button onClick={() => go(id)} className="hover:text-white cursor-pointer">{label}</button></li>
+              <li key={id}><button onClick={() => go(id)} className="hover:text-[#38BDF8] transition-colors cursor-pointer">{label}</button></li>
             ))}
           </ul>
         </div>
